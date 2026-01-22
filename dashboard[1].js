@@ -1,0 +1,1 @@
+import{getAuth,onAuthStateChanged,signOut}from'https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js';const auth=getAuth();onAuthStateChanged(auth,u=>{if(u)userEmail.innerText=u.email;else window.location='index.html'});logout.onclick=()=>{signOut(auth).then(()=>window.location='index.html')}
